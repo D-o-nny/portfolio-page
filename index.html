@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 웹페이지 설명 -->
+    <meta
+      name="description"
+      content="Donny의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta
+      name="keywords"
+      content="반응형, 웹퍼블리싱, 웹퍼블리셔, 영상, 멀티미디어, 영상편집, 포트폴리오, 웹디자인"
+    />
+    <!-- 검색 엔진 크롤링 설정 -->
+    <meta name="robots" content="index, follow" />
+    <!-- canonical URL -->
+    <link rel="canonical" href="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 제목 -->
+    <meta property="og:title" content="Donny의 포트폴리오 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="Donny의 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜(facebook에서 해논거임)에서 사용되는 메타 태그의 속성 중 하나로, 페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <!-- <meta property="og:image" content="https://responsive-page-joona0306.vercel.app/img/avatar.png" /> -->
+    <meta property="og:image" content="image/preview-img.png" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta
+      property="og:description"
+      content="Donny의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="image/preview-img.png" />
+    <meta name="twitter:title" content="Donny의 포트폴리오 웹사이트" />
+    <meta
+      name="twitter:description"
+      content="Donny의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <meta name="twitter:image" content="image/preview-img.png" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bedac34970.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <header class="header">
+        <a href="#section01" class="logo">
+          <img src="image/LOGO(go home).png" alt="logo" />
+        </a>
+      </header>
+
+      <main class="main">
+        <!-- section01 -->
+        <section id="section01" class="item">
+          <div class="intro">
+            <video
+              src="/videos/이지원.mp4"
+              width="640"
+              height="360"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="move">
+            <a href="#section02" class="go-sec02">
+              <img src="image/scrolldown.png" alt="scroll-down" />
+              <span>Scroll Down</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- section02 -->
+        <section id="section02" class="item">
+          <div class="sec-title">
+            <span>Portfolio</span>
+          </div>
+          <div class="img-slide">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="portfolio-detail.html">
+                    <img src="image/thumbnail1.png" alt="이미지1" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="portfolio-detail.html">
+                    <img src="image/thumbnail2.png" alt="이미지2" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="portfolio-detail.html">
+                    <img src="image/thumbnail3.png" alt="이미지3" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="portfolio-detail.html">
+                    <img src="image/thumbnail4.png" alt="이미지4" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="portfolio-detail.html">
+                    <img src="image/thumbnail5.png" alt="이미지5" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1.6, // 한 번에 보이는 슬라이드 개수 (1개 + 양옆에 조금씩 보이도록)
+                spaceBetween: 20, // 슬라이드 간 간격
+                centeredSlides: true, // 현재 슬라이드를 중앙에 배치
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                speed: 1000,
+                loop: true,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                },
+              });
+
+              // swiper mouseover event
+              const mySwiper = document.querySelector(".mySwiper");
+              mySwiper.addEventListener("mouseover", () => {
+                swiper.autoplay.stop();
+              });
+              mySwiper.addEventListener("mouseout", () => {
+                swiper.autoplay.start();
+              });
+            </script>
+          </div>
+          <div class="button">
+            <a href="/portfolio-list.html">
+              <span>View All of Portfolio</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- section 03 -->
+        <section id="section03" class="item">
+          <div class="sec-title">
+            <span>Profile</span>
+          </div>
+          <div class="computer">
+            <div class="txt-wrap">
+              <div class="name">
+                <span class="krname">이지원</span>
+                <span class="enname">LEE JIWON</span>
+              </div>
+              <div class="detail">
+                <div class="title">
+                  <span>기본사항</span>
+                  <span>Personal Detail</span>
+                </div>
+                <div class="detail-wrap">
+                  <ul>
+                    <li>
+                      <span>1995. 09. 22</span>
+                    </li>
+                    <li>
+                      <span>010. 8079. 1153</span>
+                    </li>
+                    <li>
+                      <span>ljiwon_@naver.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="link-skills">
+                <div class="link">
+                  <div class="title">
+                    <span>링크</span>
+                    <span>Link</span>
+                  </div>
+                  <div class="icon-wrap">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="image/notion.png" alt="notion" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="image/github.png" alt="github" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="image/youtube.png" alt="youtube" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="image/insta.png" alt="insta" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="skills">
+                  <div class="title">
+                    <span>기술</span>
+                    <span>Skills</span>
+                  </div>
+                  <div class="icon-wrap">
+                    <ul>
+                      <li>
+                        <img src="image/aftereffects.png" alt="after-effects" />
+                      </li>
+                      <li>
+                        <img src="image/premiere.png" alt="premiere-pro" />
+                      </li>
+                      <li>
+                        <img src="image/blender.png" alt="blender" />
+                      </li>
+                      <li>
+                        <img src="image/illustrator.png" alt="illustrator" />
+                      </li>
+                      <li>
+                        <img src="image/photoshop.png" alt="photoshop" />
+                      </li>
+                      <li>
+                        <img src="image/html.png" alt="html" />
+                      </li>
+                      <li>
+                        <img src="image/css.png" alt="css" />
+                      </li>
+                      <li>
+                        <img src="image/javascript.png" alt="javascript" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="education">
+                <div class="title">
+                  <span>학력사항</span>
+                  <span>Education</span>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li class="when">
+                      <span>2011 - 2013</span>
+                      <span>2014 - 2017</span>
+                      <span>2024. 12 - 2025. 06</span>
+                    </li>
+                    <li class="where">
+                      <span>대구 덕원 고등학교 졸업</span>
+                      <span>대구 가톨릭 대학교 중퇴</span>
+                      <span>그린 컴퓨터 아트 학원 수료</span>
+                    </li>
+                    <li class="what">
+                      <span>인문계열</span>
+                      <span>회화전공</span>
+                      <span>영상편집</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="career">
+                <div class="title">
+                  <span>대외활동</span>
+                  <span>Experience Career</span>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li class="when">
+                      <span>2025. 04</span>
+                      <span>2025. 05</span>
+                      <span>2025. 06</span>
+                    </li>
+                    <li class="where">
+                      <span>공모전1</span>
+                      <span>공모전2</span>
+                      <span>공모전3</span>
+                    </li>
+                    <li class="what">
+                      <span>수상</span>
+                      <span>참여</span>
+                      <span>참여</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="license">
+                <div class="title">
+                  <span>자격증</span>
+                  <span>License</span>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li class="when">
+                      <span>18. 03. ?</span>
+                    </li>
+                    <li class="where">
+                      <span>자동차운전면허증 2종 보통</span>
+                    </li>
+                    <li class="what">
+                      <span>대구광역시경찰청</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <article>
+              <img src="image/monitor.png" alt="monitor" class="monitor" />
+              <img src="image/screen.png" alt="screen" class="screen" />
+              <img src="image/profile.png" alt="profile" class="profile" />
+              <img src="image/light.png" alt="light" class="light" />
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <div class="btn-wrap">
+        <a href="#" class="mail">
+          <img src="image/Mail Icon.png" alt="mail" />
+        </a>
+        <a href="#" class="kakao">
+          <img src="image/Talk Icon.png" alt="talk" />
+        </a>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>

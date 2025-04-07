@@ -1,0 +1,109 @@
+.body-wrap {
+  position: relative;
+  display: block;
+}
+/* header */
+.header {
+  position: fixed;
+  /* position: sticky; */
+  padding: 48px 15px 79px 48px;
+  top: 0;
+  width: 100vw;
+  display: block;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #000 80%, rgba(0, 0, 0, 0));
+  /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.75); */
+}
+.header > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30.5px;
+}
+.header > div > .title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15.5px;
+}
+.logo {
+  width: 98px;
+  height: 100%;
+}
+.title {
+  font-size: 71px;
+  font-weight: 900;
+}
+
+/* cartegory box */
+.header ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 21px;
+}
+.header ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 5.5px 26.5px;
+  font-size: 18px;
+  text-align: center;
+  line-height: auto;
+  border: #fff solid 2.6px;
+  border-radius: 263px;
+}
+.header ul li.on a {
+  box-shadow: 0 0 20px rgba(255, 199, 0, 0.527);
+}
+
+/* main */
+.main {
+  margin-top: 292px;
+  position: relative;
+  width: 100%;
+  /* height: calc(100vh - 292px); */
+}
+
+/* section */
+.section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section article {
+  width: 33.3%;
+  position: relative;
+}
+.section article div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.section article div a {
+  border: #fff solid 1px;
+  width: 100%;
+}
+.section article div a img {
+  width: 100%;
+}
+
+/* contact btn */
+.btn-wrap {
+  position: fixed;
+  right: 53px;
+  bottom: 53px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  z-index: 300;
+  opacity: 1;
+}
+.mail {
+}
+.kakao {
+}
